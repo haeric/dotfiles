@@ -25,3 +25,6 @@ parse_git_branch() {
      
 PS1='\[\033[01;32m\]\w\[\033[;94m\]$(parse_git_branch)\[\033[00m\]\$ '
 
+if [ -f ~/.bash_secrets ]; then
+    . ~/.bash_secrets
+fi
